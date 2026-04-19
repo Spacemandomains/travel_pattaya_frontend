@@ -1,0 +1,222 @@
+.landmarks-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Avenir, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.landmarks-grid {
+    padding: 20px;
+}
+
+.category-section {
+    margin-bottom: 60px;
+}
+
+.category-section h2 {
+    color: #6b1f35;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.subcategory-section {
+    margin-bottom: 30px;
+}
+
+.subcategory-section h3 {
+    color: #972b38;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.landmarks-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.landmark-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.landmark-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.landmark-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.landmark-card p {
+    margin-bottom: 15px;
+}
+
+.directions-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Avenir, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    min-width: 120px;
+    text-align: center;
+    background-color: #6b1f35;
+    cursor: pointer;
+}
+
+.directions-btn:hover {
+    background-color: #50172a;
+}
+
+.schedule-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #6b1f35;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.schedule-btn:hover {
+    background-color: #50172a;
+}
+
+.language-switcher {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        flex-direction: row;
+        width: 100%;
+        gap: 5px;
+        padding: 0 10px;
+    }
+
+    .language-switcher button {
+        flex: 1;
+        min-width: 70px;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+.language-switcher button {
+    padding: 8px 16px;
+    border: 2px solid #6b1f35;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.language-switcher button:hover {
+    background: #6b1f35;
+    color: white;
+}
+
+.hours-section, .contact-section {
+    margin: 15px 0;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 6px;
+}
+
+.hours-section h4, .contact-section h4 {
+    color: #6b1f35;
+    margin-bottom: 10px;
+}
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.day {
+    font-weight: 600;
+}
+
+.time {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .landmarks-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .directions-btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+.recommendation-alert {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.recommendation-alert button {
+    background: #6b1f35;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.recommendation-alert button:hover {
+    background: #50172a;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #6b1f35;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    animation: slideIn 0.5s ease-out;
+}
+
+.custom-alert.fade-out {
+    animation: fadeOut 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100%); opacity: 0; }
+}
