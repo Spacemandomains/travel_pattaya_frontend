@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pattaya City Hotspots</title>
+    <meta property="og:title" content="Pattaya City Hotspots - Best Places to Visit">
+    <meta property="og:description" content="Explore the best restaurants, bars, and entertainment venues in Pattaya City">
+    <meta property="og:image" content="https://travelpattayacity.replit.app/generated-icon.png">
+    <meta property="og:url" content="https://travelpattayacity.replit.app/landmarks.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="landmarks.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="notifications.js"></script>
+    <script src="scheduler.js"></script>
+    <script src="landmarks.js"></script>
+</head>
+<body style="background-color: #F5F2EC;">
+    
+    <!-- Striped Header -->
+    <div class="striped-header">
+        <div class="stripe stripe1"></div>
+        <div class="stripe stripe2"></div>
+        <div class="stripe stripe3"></div>
+        <div class="stripe stripe4"></div>
+        <div class="stripe stripe5"></div>
+    </div>
+
+    <div class="landmarks-container">
+        <h1 style="font-size: 61.6px; font-weight: 300; color: rgb(47, 46, 45);">Pattaya City Hotspots</h1>
+        <div class="language-switcher">
+            <button onclick="setLanguage('en')">🇺🇸 EN</button>
+            <button onclick="setLanguage('th')">🇹🇭 TH</button>
+            <button onclick="setLanguage('zh')">🇨🇳 中文</button>
+            <button onclick="setLanguage('hi')">🇮🇳 हिंदी</button>
+        </div>
+        <div class="landmarks-grid">
+            <!-- Cards will be added dynamically via JavaScript -->
+        </div>
+    </div>
+
+    <script type="module" src="landmarks.js"></script>
+</body>
+</html>
