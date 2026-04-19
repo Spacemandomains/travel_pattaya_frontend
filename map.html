@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pattaya City Map - Hotspots</title>
+    <meta property="og:title" content="Pattaya City Interactive Map">
+    <meta property="og:description" content="Interactive map of Pattaya City's best locations and hotspots">
+    <meta property="og:image" content="https://travelpattayacity.replit.app/generated-icon.png">
+    <meta property="og:url" content="https://travelpattayacity.replit.app/map.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="map.js" defer></script>
+</head>
+<body style="background-color: #F5F2EC;">
+    <div class="striped-header">
+        <div class="stripe stripe1"></div>
+        <div class="stripe stripe2"></div>
+        <div class="stripe stripe3"></div>
+        <div class="stripe stripe4"></div>
+        <div class="stripe stripe5"></div>
+    </div>
+
+    <div class="map-container">
+        <h1 style="font-size: 61.6px; font-weight: 300; color: rgb(47, 46, 45);">Pattaya City Map</h1>
+        <div id="map"></div>
+        <button id="locateMe" class="locate-btn">📍 Show My Location</button>
+        <div class="buttons">
+            <a href="landmarks.html" class="btn primary" id="hotspots-btn">Pattaya City Hotspots</a>
+        </div>
+    </div>
+</body>
+</html>
