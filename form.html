@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Pattaya City</title>
+    <style>
+        .form-container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border: 2px solid #000;
+            background: #6b1f35;
+            color: #fff;
+            cursor: pointer;
+            margin: 10px 0;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 768px) {
+            .btn {
+                margin: 15px 0;
+                width: 100%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #F5F2EC;">
+    <div class="striped-header">
+        <div class="stripe stripe1"></div>
+        <div class="stripe stripe2"></div>
+        <div class="stripe stripe3"></div>
+        <div class="stripe stripe4"></div>
+        <div class="stripe stripe5"></div>
+    </div>
+
+    <div class="form-container">
+        <h1 style="font-size: 61.6px; font-weight: 300; color: rgb(47, 46, 45);">Your Perfect Day in Pattaya City Starts Here</h1>
+        <form id="quickForm">
+            <div class="form-group">
+                <input type="text" id="firstName" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email Address">
+            </div>
+            <button type="submit" class="btn primary">Submit</button>
+            <button type="button" class="btn primary" onclick="skipForm()">Skip</button>
+        </form>
+    </div>
+
+    <script type="module" src="form.js"></script>
+</body>
+</html>
